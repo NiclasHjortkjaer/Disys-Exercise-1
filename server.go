@@ -16,7 +16,7 @@ func main() {
 
 	s := chat.Server{}
 
-	chat.Regi
+	chat.RegisterChatServiceServer(grpcServer, &s)
 
 	grpcServer := grpc.NewServer()
 

@@ -4,7 +4,7 @@
 // 	protoc        v3.15.8
 // source: chat.proto
 
-package __remote_repo_
+package chat
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
