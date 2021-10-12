@@ -4,6 +4,7 @@ import (
 	"log"
 	"net"
 
+	"github.com/NiclasHjortkjaer/Disys-Exercise-1/chat"
 	"google.golang.org/grpc"
 )
 
@@ -12,6 +13,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to listen on port 9000: %v", err)
 	}
+
+	s := chat.Server{}
+
+	chat.Regi
 
 	grpcServer := grpc.NewServer()
 
